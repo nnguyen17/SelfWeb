@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { UpdateComponent } from './update/update.component';
 
-const routes: Routes = [{ path: 'AboutRoute', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) }, { path: 'GalleryRoute', loadChildren: () => import('./gallery/gallery.module').then(m => m.GalleryModule) }, { path: 'UpdateRoute', loadChildren: () => import('./update/update.module').then(m => m.UpdateModule) }];
+const routes: Routes = [
+  {path:'update', component:UpdateComponent},
+  {path:'gallery', component:GalleryComponent},
+  {path:'about', component:AboutComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
