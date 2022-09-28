@@ -5,6 +5,7 @@ import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleryModule } from './gallery/gallery.module';
+import { MessageModule } from './message/message.module';
 import { UpdateModule } from './update/update.module';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { UpdateModule } from './update/update.module';
     AppRoutingModule,
     AboutModule,
     GalleryModule,
-    UpdateModule
+    UpdateModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
