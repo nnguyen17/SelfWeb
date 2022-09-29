@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GalleryModule } from './gallery/gallery.module';
 import { MessageModule } from './message/message.module';
 import { UpdateModule } from './update/update.module';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UpdateModule } from './update/update.module';
     AboutModule,
     GalleryModule,
     UpdateModule,
-    MessageModule
+    MessageModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
