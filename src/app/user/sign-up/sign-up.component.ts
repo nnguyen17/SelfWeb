@@ -32,7 +32,7 @@ export class SignUpComponent implements OnInit {
   }
 
   signUp(){
-    this.userService.signUp(this.signUpForm.value).subscribe(() => {
+    this.userService.signUpService(this.signUpForm.value).subscribe(() => {
       alert("Sign Up Successfully")
     });
   }

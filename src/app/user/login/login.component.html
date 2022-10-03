@@ -1,1 +1,15 @@
-<p>login works!</p>
+<h1 class="display-4">Login</h1>
+<form #loginForm="ngForm" (submit)="login(loginForm)">
+    <div class="mb-3">
+        <label>Username</label>
+        <input type="email" name="userName" required class="form-control" [(ngModel)]="loginModel.userName"/>
+    </div>
+    <div class="mb-3">
+        <label>Password</label>
+        <input type="password" name="password" required class="form-control" [(ngModel)]="loginModel.password"/>
+    </div>
+    <a [routerLink]="'/signup'">New User?</a>
+    <br>
+    <input type="submit" value="Log In" class="btn btn-primary"/>
+    
+</form>

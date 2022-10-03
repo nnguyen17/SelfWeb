@@ -9,11 +9,16 @@ import { SignUp } from 'src/interface/signup';
 })
 export class UserService {
 
-  url : string = environment.apiKey+environment.apiControllers.signup
+  signUpUrl : string = environment.apiKey+environment.apiControllers.signup
+  loginUrl : string = environment.apiKey+environment.apiControllers.login
 
   constructor(private httpClient:HttpClient) { }
 
-  signUp(signup: SignUp) : Observable<any>{
-    return this.httpClient.post(this.url, signup);
+  signUpService(signup: SignUp) : Observable<any>{
+    return this.httpClient.post(this.signUpUrl, signup);
+  }
+
+  loginService(login: any) : Observable<any> {
+    return this.httpClient.post(this.loginUrl, login)
   }
 }

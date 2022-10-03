@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   apiKey: 'https://localhost:7057/api/',
   apiControllers:{
-    signup:"User/signup"
+    signup:"User/signup",
+    login:"User/login"
   }
 };
 
